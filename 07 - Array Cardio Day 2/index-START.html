@@ -30,8 +30,11 @@
     const adult = (obj) => (2026 - parseInt(obj.year) >= 19);
     console.log(
       people.some(adult)
-    )
+    );
     // Array.prototype.every() // is everyone 19 or older?
+    console.log(
+      people.every(adult)
+    );
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
